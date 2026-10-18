@@ -2,6 +2,17 @@
 
 A lightweight SIEM-style dashboard for monitoring a **Suricata** IDS sensor. SentinelNode pulls alerts and network events from a Linux sensor over SSH, normalizes them into incidents stored in SQLite, and surfaces them through a FastAPI backend, a React web dashboard, and a PySide6 desktop client — with optional **Discord** notifications for high-severity alerts.
 
+## Screenshots
+
+**Overview** — incident counts and stored Suricata event types
+![Overview](docs/screenshots/overview.png)
+
+**Incidents** — searchable, filterable incident queue with one-click resolve
+![Incidents](docs/screenshots/incidents.png)
+
+**Event investigation** — per-event details with previous/next navigation
+![Event details](docs/screenshots/event-details.png)
+
 ## Features
 - Collects Suricata `eve.json` alerts, DNS, HTTP, TLS and flow events from a remote sensor via SSH
 - Incident database with severity, status and per-incident telemetry (SQLite)
